@@ -1,0 +1,92 @@
+/* Google Font - Inter : 200, 300, 500*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+.rating-container{
+    max-width: 450px;
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 18px;
+}
+
+.rating-container h3{
+    color: #dcdcdc;
+    font-weight: 400;
+}
+
+.stars{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+.stars i{
+    color: #dcdcdc;
+    cursor: pointer;
+}
+
+.stars i.active{
+    color: #22c1c3;
+}
+
+.stars i.high{
+    color: red;
+}
+
+.emojis{
+    position: relative;
+}
+.emojis .emoji{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateY(100%) translateX(-50%);
+    opacity: 0;
+    font-size: 50px;
+    background: transparent;
+    display: block;
+    transition: all ease .40s;
+}
+
+.emojis .emoji.active{
+    transform: translateY(-50%) translateX(-50%);
+    opacity: 1;
+    display: block;
+    transform: translate(-50%,-50%);
+}
+@media (max-width: 350px) {
+    .rating-container{
+        margin: 0 10px;
+    }
+    .rating-container h3{
+        font-size: 16px;
+    }
+}
+@media (max-width: 300px) {
+    .rating-container{
+        padding: 20px 30px;
+    }
+    .rating-container h3{
+        font-size: 12px;
+    }
+    .stars{
+        font-size: 20px;
+    }
+}
