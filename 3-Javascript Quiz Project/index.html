@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz Projcet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Start Btn-->
+    <button class="start-Btn">Get Started</button>
+    <!-- Info Box-->
+    <div class="info-box">
+        <div class="info-box-header">
+            Some rules of this Quiz
+        </div>
+        <div class="info-list">
+            <ul>
+                <li>
+                    1. You will have only <span>15 seconds</span> per each question.
+                </li>
+                <li>
+                    2. Once you select your answer, it can't be undone. 
+                </li>
+                <li>
+                    3. You can't select any option once time goes off. 
+                </li>
+                <li>
+                    4. You can't exit from the Quiz while you're playing. 
+                </li>
+                <li>
+                    5. You'll get points on the bases of your correct answers. 
+                </li>
+            </ul>
+        </div>
+        <div class="buttons">
+            <button class="btn exit-quiz">Exit</button>
+            <button class="btn cont-quiz">continue</button>
+        </div>
+    </div>
+    <!-- Info Box-->
+    <div class="quiz-box">
+        <div class="quiz-box-header">
+            <h4>Awasome Quiz Application</h4>
+            <div class="timer">
+                <p>Time Left</p>
+                <span>15</span>
+            </div>
+        </div>
+        <div class="quiz-box-body">
+            <div class="quiz-box-ques">
+            </div>
+            <ul class="quiz-box-options">
+            </ul>
+        </div>
+        <div class="quiz-box-footer">
+            <p><span class="current">1 </span>of <span>5 </span>Questions</p>
+            <button class="btn cont-quiz">Next Que</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="questions.js"></script>
+</body>
+</html>

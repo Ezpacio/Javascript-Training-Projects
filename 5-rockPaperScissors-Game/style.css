@@ -1,0 +1,213 @@
+/* Google Font - Inter : 200, 300, 500*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f6f7fb;
+    transition: all ease .44s;
+}
+
+.container {
+    max-width: 1000px;
+    width: 800px;
+    padding: 20px 100px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    -webkit-box-shadow: 0px 0px 17px -11px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 17px -11px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 17px -11px rgba(66, 68, 90, 1);
+    transition: all ease .44s;
+}
+/* For user */
+.container.start .user-result{
+    transform-origin: left;
+    animation: userShake 0.7s ease infinite;
+}
+@keyframes userShake{
+    50%{
+      transform: rotate(10deg);  
+    }
+}
+/* For bot */
+.container.start .bot-result{
+    transform-origin: right;
+    animation: botShake 0.7s ease infinite;
+}
+@keyframes botShake{
+    50%{
+      transform: rotate(-10deg);  
+    }
+}
+.result-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 7rem;
+}
+
+.result-image img{
+    height: 250px;
+}
+
+.user-result img{
+    transform: rotate(-90deg) rotateX(-180deg);
+}
+
+.bot-result img{
+    transform: rotate(-90deg);
+}
+
+h1#result-text{
+    text-align: center;
+    font-size: 2rem;
+    color: #7aaf8d;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.option-hands{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.option-hands img{
+    height: 110px;
+}
+
+.option-hand-image:first-child img{
+    height: 90px;
+}
+
+.option-hand-image p{
+    margin-top: 10px;
+    color: #7aaf8d;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.container.start .option-hand-image{
+    pointer-events: none;
+}
+
+.option-hand-image{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.6;
+    transition: opacity .44s linear;
+    cursor: pointer;
+}
+
+.option-hand-image:hover{
+    opacity: 1;
+}
+
+.option-hand-image.active{
+    opacity: 1;
+}
+
+.option-hand-image img{
+    pointer-events: none;
+    z-index: 100;
+}
+
+.line{
+    display: none;
+    position: absolute;
+    bottom: -6px;
+    background: #7aaf8d;
+    height: 2px;
+    border-radius: 50vh;
+    width: 50%;
+    transition: all ease .44s;
+}
+
+.line.active{
+    display: block;
+}
+
+/* .result {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.result img {
+    
+    transform: rotate(-90deg);
+}
+.left-resul, .right-resul{
+    display: flex;
+    justify-content: center;
+}
+
+.result .left-resul img {
+    transform: rotate(-90deg) rotateX(-180deg);
+}
+
+h2.result-type {
+    text-align: center;
+    color: #7aaf8d;
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.choice-hand {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.choice-hand img {
+    height: 120px;
+    opacity: 0.5;
+}
+
+.choice-hand img.active{
+    opacity: 1;
+}
+
+.choice-hand .rock-hand img {
+    height: 100px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 8px;
+    color: #7aaf8d;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.paper-hand .title{
+    margin-left: -10px;
+}
+
+.hands{
+    cursor: pointer;
+}
+@media (max-width: 660px) {
+    .container{
+        margin: 0 40px;
+    }
+    .result img {
+        height: 200px;
+    }
+} */
