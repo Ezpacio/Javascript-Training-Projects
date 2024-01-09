@@ -63,6 +63,6 @@ optionHands.forEach((item, idx) => {
                 ? 'Match Draw'
                 : `${outComeValue} won!!`;
 
-        }, 2500);
+        }, 1500);
     });
 });
