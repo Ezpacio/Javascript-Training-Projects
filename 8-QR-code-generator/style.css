@@ -1,22 +1,11 @@
 /* Google Font - Inter : 200, 300, 500*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
-
-/* body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: rgb(34,193,195);
-    background: linear-gradient(-90deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-} */
-
 .qr-code-box{
     max-width: 300px;
     width: 100%;

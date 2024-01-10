@@ -1,21 +1,22 @@
 {
-    "manifest_version": 3,
     "name": "QR Code Generator",
-    "version": "0.0.1",
     "description": "A Javascript project to generate QR code",
+    "version": "0.0.1",
+    "manifest_version": 3,
     "author": "sametgokkayax@gmail.com",
     "icons":{
         "16": "/images/icon-16.png",
         "48": "/images/icon-48.png",
         "128": "/images/icon-128.png"
     },
+
     "action":{
         "default-icon": {
             "16": "/images/icon-16.png",
             "48": "/images/icon-48.png",
             "128": "/images/icon-128.png"
         },
-        "default-title": "Qr Code Generator by Espacio"
+        "default-popup": "popup.html"
     }
 
 }
