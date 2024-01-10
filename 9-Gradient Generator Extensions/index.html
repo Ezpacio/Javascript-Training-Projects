@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Css Gradient Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="color-panel"></div>
+        <div class="picers-row">
+            <input class="picer color-1" type="color" value="#52BC24">
+            <input class="picer color-2" type="color" value="#4416FE">
+        </div>
+        <div class="input-row">
+            <div class="title">Direction</div>
+            <div class="select-row">
+                <select name="direction" id="options">
+                    <option value="to top">Top</option>
+                    <option value="to right top">Right top</option>
+                    <option value="to right">Right</option>
+                    <option value="to right bottom">Right bottom</option>
+                    <option value="to bottom">Bottom</option>
+                    <option value="to left bottom">Left bottom</option>
+                    <option value="to left">Left</option>
+                    <option value="to left top">Left top</option>
+                </select>
+                <button id="refresh">Refresh colors</button>
+            </div>
+        </div>
+        <div class="css-output">
+            <div class="background">
+                <div class="title">Css</div>
+                <div class="body-output">
+                    <h3 id="css-grad-code"><span>background:</span> linear-gradient(to left top,#4416fe, #52bc24);</h3>
+                </div>
+                <button class="copy-btn">
+                    <span>
+                        <i class='bx bx-copy'></i>
+                        Copy to Clipboard
+                    </span>
+                    <div class="before"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
