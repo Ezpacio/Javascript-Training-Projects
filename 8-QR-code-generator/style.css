@@ -1,6 +1,6 @@
 /* Google Font - Inter : 200, 300, 500*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,12 +8,11 @@
 }
 .qr-code-box{
     max-width: 300px;
-    width: 100%;
+    width: 300px;
     background: #fff;
     color: #000;
-    border-radius: 8px;
-    padding: 20px;
-    height: 173px;
+    padding: 20px 20px 10px 20px;
+    /* height: 173px; */
     transition: all ease .34s;
     -webkit-box-shadow: 0px 0px 18px -3px rgba(210, 210, 216, 1);
     -moz-box-shadow: 0px 0px 18px -3px rgba(210, 210, 216, 1);
@@ -22,7 +21,6 @@
 .qr-code-box.showQr{
     height: 391px;
 }
-
 
 h1{
     font-size: 18px;
@@ -70,7 +68,7 @@ button:hover{
 
 .qr-code{
     width: 100%;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     padding: 20px 40px 20px 40px;
@@ -88,12 +86,29 @@ button:hover{
 }
 
 .qr-code-box.showQr .qr-code{
+    display: flex;
     pointer-events: auto;
     opacity: 1;
     transition: opacity all ease .44s;
 }
-@media (max-width: 320px) {
-    .qr-code-box{
-        margin: 0 20px;
-    }
+
+footer{
+    margin-top: 10px;
+    text-align: center;
+    transition: all ease .34s;
+}
+footer a{
+    display: inline-flex;
+    font-size: 20px;
+    color: #2d86c1;
+    text-decoration: none;
+    margin: 0 2px;
+}
+
+footer a:hover{
+    color: #369ee3;
+}
+
+footer.hidden{
+    display: none;
 }
