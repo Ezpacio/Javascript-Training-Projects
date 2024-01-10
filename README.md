@@ -7,3 +7,6 @@
 - 4- Progress Steps Project [Go => ](./4-progressSteps/)
 - 5- Rock, Paper, Scissors Game Projcet [Go => ](./5-rockPaperScissors-Game/)
 - 6- Rotating Navigation Project [Go => ](./6-RotatingNavigation/)
+- 7- Star Rating Project [Go => ](./7-Star-Rating%20Projcet/)
+- 8- QR Code Generator [Go => ](./8-QR-code-generator/)
+- 9- Gradient Generator Extensions [Go => ](./9-Gradient%20Generator%20Extensions/)
