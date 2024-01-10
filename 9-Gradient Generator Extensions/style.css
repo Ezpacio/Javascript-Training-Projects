@@ -8,7 +8,7 @@
 .container{
     max-width: 380px;
     width: 100%;
-    padding: 25px;
+    padding: 25px 25px 12px 25px;
     transition: all ease .40s;
     -webkit-box-shadow: 0px 0px 14px -4px #a3a3a3;
     -moz-box-shadow: 0px 0px 14px -4px #b7b7b7;
@@ -171,4 +171,22 @@ input[type='color']{
     100%{
         width: 0;
     }
+}
+
+footer{
+    margin-top: 12px;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #09123B;
+    transition: all ease .40s;
+}
+
+footer a:hover{
+    color: #404E8B;
 }
