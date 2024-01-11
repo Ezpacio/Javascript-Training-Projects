@@ -11,3 +11,4 @@
 - 8 - QR Code Generator [Go => ](./8-QR-code-generator/)
 - 9 - Gradient Generator Extensions [Go => ](./9-Gradient%20Generator%20Extensions/)
 - 10 - FAQ Collapse [Go => ](./10-FAQ%20Collapse/)
+- 11 - Todo List [Go => ](./11%20-%20Todo%20List%20Project/)
