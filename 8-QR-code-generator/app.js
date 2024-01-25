@@ -3,7 +3,6 @@ const button = document.getElementById('btn');
 const qrInput = document.querySelector('input[type="text"]');
 const qrImage = document.querySelector('.qr-code img');
 const footerLinks = document.querySelector('footer');
-console.log(footerLinks);
 
 button.addEventListener('click', () => {
     const inputValue = qrInput.value;
