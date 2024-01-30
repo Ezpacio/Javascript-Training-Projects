@@ -13,4 +13,4 @@
 - 10 - FAQ Collapse [Go => ](./10-FAQ%20Collapse/)
 - 11 - Todo List [Go => ](./11%20-%20Todo%20List%20Project/)
 - 12 - Music Player [Go => ](./12-music-player-project/)
-- 13 - Form validator Project [Go => ](./13.form-validation/)
+- 13 - Form validator Project [Go => ](./13.form-validator/)
