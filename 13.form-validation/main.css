@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+:root{
+    --succers-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f9fafb;
+}
+.container{
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 20px;
+    font-weight: 500;
+}
+.form-control{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+}
+.form-control:nth-child(5){
+    margin-bottom: 10px;
+}
+.form-control input{
+    width: 400px;
+    margin: 8px 0 18px 0;
+    padding: 12px;
+    border: 2px solid transparent;
+    outline: 0;
+    border-radius: 8px;
+    background: #eef0f4;
+    font-size: 15px;
+    font-weight: 500;
+}
+.form-control label{
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.8);
+}
+#form button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+    color: #fff;
+    background: #5381e6;
+    cursor: pointer;
+    transition: all ease .34s;
+}
+#form button:hover{
+    background: #406dce;
+}
+
+
+.form-control.success input{
+    border-color: var(--succers-color);
+    background: #2ecc7014;
+}
+
+.form-control.error input{
+    border-color: var(--error-color);
+    background: #e74c3c14;
+}
+
+.form-control small{
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+
+.form-control.error label{
+    color: var(--error-color);
+}
+
+.form-control .check{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-30%);
+    font-size: 22px;
+    visibility: hidden;
+}
+
+.form-control.success .check{
+    color: var(--succers-color);
+    visibility: visible;
+}
+
+.form-control.error .check{
+    color: var(--error-color);
+    visibility: visible;
+}
+
+.form-control.success .check .err{
+    display: none;
+}
+
+.form-control.error .check .suc{
+    display: none;
+}
