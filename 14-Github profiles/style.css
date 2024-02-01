@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+:root{
+    --succers-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #2a2a72;
+    overflow: hidden;
+    color: #fff;
+}
+
+.user-from{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-from input{
+    max-width: 700px;
+    width: 100%;
+    background: #4c2885;
+    border: 0;
+    border-radius: 12px;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-family: inherit;
+    font-size: 1rem;
+    box-shadow: 0 5px 10px rgba(152, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+.user-from input::placeholder{
+    color: #bbb;
+}
+
+.user-from input:focus{
+    outline: none;
+}
+
+#main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 100%;
+    max-width: 700px;
+    background: #4c2885;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(152, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 3rem;
+    margin: 0 1.5rem;
+}
+
+.avatar{
+    border-radius: 50%;
+    border: 6px solid #2a2a72;
+    height: 150px;
+    width: 150px;
+}
+
+.user-info{
+    color: #eee;
+    margin-left: 2rem;
+}
+
+.user-info p{
+    margin-top: 1rem;
+}
+
+.user-info ul {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+.user-info ul li{
+    padding: 4px;
+    position: relative;
+    cursor: default;
+}
+
+.user-info ul li:hover::before{
+    width: 100%;
+    visibility: visible;
+}
+
+.user-info ul li::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: #fff;
+    bottom: 0;
+    visibility: hidden;
+    transition: all ease .34s;
+}
+
+.user-info ul li strong{
+    font-size: 0.9rem;
+    margin-left: 0.1rem;
+    
+}
+
+.user-info #repos{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.user-info #repos a{
+    color: #fff;
+    background: #212a72;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.6rem;
+
+}
+
+@media (max-width: 570px) {
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+}
