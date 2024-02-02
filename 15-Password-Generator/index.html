@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Generate Password</h2>
+        <div class="results-container">
+            <p class="subtitle">Generated Password</p>
+            <div class="results">
+                <p></p>
+                <i id="copy" class='bx bx-copy'>
+                    <div class="copied">Copied!</div>
+                </i>
+            </div>
+        </div>
+        <ul class="settings">
+            <p class="subtitle">Length</p>
+            <li class="setting">
+                <div class="value-left">8</div>
+                <input type="range" id="range" min="0" max="20" value="8" step="1">
+                <div class="value-right">20</div>
+            </li>
+        </ul>
+        <ul class="settings">
+            <p class="subtitle">Settings</p>
+            <li class="setting">
+                <label>Include uppercase letters</label>
+                <span id="uppercase" class="check-box active"></span>
+            </li>
+            <li class="setting">
+                <label>Include lowercase letters</label>
+                <span id="lowercase" class="check-box active"></span>
+            </li>
+            <li class="setting">
+                <label>Include numbers</label>
+                <span id="numbers" class="check-box active"></span>
+            </li>
+            <li class="setting">
+                <label>Include symbols</label>
+                <span id="symbols" class="check-box active"></span>
+            </li>
+        </ul>
+        <button id="generate">
+            Generate Password
+        </button>
+    </div>
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

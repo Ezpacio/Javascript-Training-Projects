@@ -13,4 +13,5 @@
 - 11 - Todo List [Go => ](./11%20-%20Todo%20List%20Project/)
 - 12 - Music Player [Go => ](./12-music-player-project/)
 - 13 - Form validator Project [Go => ](./13.form-validator/)
-- 14 - Githb Profile Project [Go => ](./14-Github%20profiles/)
+- 14 - Github Profile Project [Go => ](./14-Github%20profiles/)
+- 15 - Password Generator [Go => ](./15-Password-Generator/)
