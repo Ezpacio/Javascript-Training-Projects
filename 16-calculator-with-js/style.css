@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(245, 242, 242);
+}
+button{
+    justify-self: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    font-size: 28px;
+    background: rgba(27,27,27,1);
+    -webkit-box-shadow: 8px 6px 24px 0px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 8px 6px 24px 0px rgba(0, 0, 0, 0.34);
+    box-shadow: 8px 6px 24px 0px rgba(0, 0, 0, 0.34);
+    color: #fff;
+    cursor: pointer;
+}
+button:hover{
+    background: #292929;
+}
+button:active{
+    background: #4a4a4a;
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 12px;
+    padding: 20px 20px 40px 20px;
+}
+.calculator{
+    max-width: 460px;
+    overflow: hidden;
+    border-radius: 30px;
+    background: rgb(73,73,73);
+    background: linear-gradient(180deg, rgba(73,73,73,1) 0%, rgba(40,40,40,1) 28%, rgba(27,27,27,1) 47%);
+}
+input#display{
+    width: 100%;
+    font-size: 5rem;
+    padding: 40px 20px 20px 20px;
+    text-align: right;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+}
+button.opt{
+    background: rgb(124, 124, 124);
+    color: #000;
+}
+button.opt:hover{
+    background: rgb(155, 155, 155);
+}
+button.opt:active{
+    background: rgb(181, 181, 181);
+}
+.operator-btn{
+    background: #dc6917;
+}
+.operator-btn:hover{
+    background: rgb(236, 117, 32);
+}
+.operator-btn:active{
+    background: rgb(246, 134, 54);
+}
+.operator-btn-white{
+    grid-column: span 2;
+    text-align: start;
+    padding-left: 34px;
+    width: 186px;
+    border-radius: 100vh;
+}

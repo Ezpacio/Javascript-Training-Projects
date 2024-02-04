@@ -15,3 +15,4 @@
 - 13 - Form validator Project [Go => ](./13.form-validator/)
 - 14 - Github Profile Project [Go => ](./14-Github%20profiles/)
 - 15 - Password Generator [Go => ](./15-Password-Generator/)
+- 16 - Calculator [Go => ](./16-calculator-with-js/)
